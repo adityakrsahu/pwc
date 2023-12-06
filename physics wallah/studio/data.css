@@ -1,0 +1,25 @@
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav1{
+    margin-left: 45px;
+    margin-top: -23px;
+}
+.nav2{
+        margin-left: 90px;
+    margin-top: -30px;
+    font-size: 23px;
+}
+
+
+.log{
+    border-radius: 50px;
+}
+
+/*<------------>*/
+
+.dash{
+    width: 35%;
+}

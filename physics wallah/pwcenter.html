@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+	<style>
+		body{
+			box-sizing: border-box;
+			overflow-x: hidden;
+		}
+		html{
+    		overflow-x: hidden;
+		}
+		.nev{
+			height: 100px;
+		    background-color: white;
+		    display: flex;
+		    box-shadow: 5px 5px 25px gainsboro;
+		}
+		.nev1{
+			margin-left: 135px;
+		    margin-top: 20px;
+		}
+		.cou{
+		    margin-left: 55px;
+		    margin-top: 25px;
+		    border: 1px solid gainsboro;
+		    padding-left: 10px;
+		   border-radius: 15px;
+		    margin-bottom: 25px;
+		    padding-right: 10px;
+		    font-size: 20px;
+		    padding-top: 5px;
+		}
+		.pw{
+		    margin-left: 50px;
+  			margin-top: 36px;
+  		  	font-size: 20px;
+		}
+		.pw a{
+			padding-left: 10px;
+		}
+		.pw1{
+			margin-left: 190px;
+		    margin-top: 17px;
+		}
+		.pw1 img{
+			width: 145px;
+    		height: 60px;
+		}
+		.but{
+			margin-top: 20px;
+		}
+		a{
+			text-decoration: none;
+		}
+		.but button{
+			padding: 15px;
+		    background-color: #5A4BDA;
+		    border: none;
+		    color: white;
+		    font-size: 20px;
+		    border-radius: 10px;
+		}
+		.pwc{
+			margin-top: 5px;
+		}
+/*		<=============>*/
+		.find{
+			text-align: center;
+		}
+		.find input{
+			margin-top: 20px;
+		    padding: 15px;
+		    padding-right: 185px;
+		    border-radius: 10px;
+		    background-color: gainsboro;
+		}
+		.faq1{
+		display: flex;
+		justify-content: center;
+		}
+		.img{
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			width: 60%;
+			margin-left: 175px;
+			margin-top: 15px;
+		}
+		.img div{
+			margin: 5px;
+			border: 1px solid gainsboro;
+			width:225px
+
+
+		}
+		.img p{
+			margin-left: 80px;
+		    margin-top: -40px;
+		    font-size: 19px;
+		}
+		#input5:checked~.city{
+			display: block;
+			position: fixed;
+		}	
+		.view{
+			position: relative;
+			float: revert;
+
+		}
+		.city{
+			background-color: blue;
+		}
+		.city{
+			width: 400px;
+			height: 400px;
+			background-color: white;
+			position: absolute;
+			top: 80px;
+			left: 400px;
+			display: none;
+
+		}
+		.city a{
+			text-decoration: none;
+		}
+		.all{
+			text-align: center;
+		}
+		/*<----------------->*/
+		.our{
+			text-align: center;
+			margin-top: 35px;
+			margin-bottom: 35px;
+		}
+		/*<=============>*/
+		.ex{
+			display: flex;
+			justify-content: center;
+		}
+		.ex div{
+		border: 2px solid gainsboro;
+	    margin: 5px;
+	    padding: 10px;
+	    border-radius: 15px;
+   		width: 293px;
+		}
+	/*<============>*/
+	.ex1{
+		display: flex;
+		justify-content: center;
+		margin-top:35px;
+		margin-bottom: 35px;
+		/*border: 2px solid gainsboro;*/
+	}
+	.ex1 a{
+		/* border: 2px solid gainsboro; */
+		padding: 15px;
+		background-color: #5A4BDA;
+		color: #fff;
+		padding-left: 70px;
+		padding-right: 70px;
+		border-radius: 5px;
+	}
+	/* <======================> */
+	.sch{
+		display: flex;
+		justify-content: center;
+		background-color:#fce7a7;
+		width: 982px;
+    	margin-left: 183px;
+		height: 350px;
+		background-image: url(https://www.pw.live/vidyapeeth-centres/_next/static/media/Trophy.22109881.svg);
+	}
+	.sch1{
+		display:flex;
+		justify-content: center;
+		margin-left: -25px;
+	}
+	.sch1 div{
+		border-radius: 5px;
+		margin: 10px;
+    	padding-right: 50px;
+    	padding-left: 10px;
+		height: 100px;
+		background-color: #fff;
+		width: 118px;
+    	margin-left: 0px;
+	}
+	.sch2{
+		margin-left: 135px;
+    	font-size: 24px;
+   		margin-top: 25px;
+	}
+	.sch2 a{
+		text-decoration: none;
+		background-color: black;
+		color: white;
+		padding: 10px;
+		padding-left: 25px;
+		padding-right: 25px;
+		border-radius: 10px;
+	}
+	/* <-----------> */
+	.con0{
+		background-color: gainsboro;
+		width: 950px;
+		height: 430px;
+		padding-left: 30px;
+		margin-left: 13px;
+		margin-top: 45px;
+	}
+	.con0 h1{
+		margin-top: 60px;
+    	text-align: center;
+	}
+	.con p{
+		margin-left: 30px;
+    	font-size: 20px;
+	}
+
+	.con{
+		display: grid;
+		grid-template-columns: auto auto;
+		margin-top: 45px;
+		padding: 5px;
+		width: 635px;
+    	margin-left: 105px;
+	}
+
+	.con div{
+		padding-right: 25px;
+    	padding-bottom: 15px;
+
+	}
+	.vi{
+		text-align: center;
+    	font-size: 25px;
+    	margin-top: 25px;
+	}
+	.vi a{
+		text-decoration: none;
+    	background-color: blue;
+    	padding: 15px;
+		color: #fff;
+	}
+	/* <------------> */
+	.live0{
+		width: 980px;
+		display: flex;
+		justify-content: center;
+		margin-left: 183px;
+		background-color: white;
+		box-shadow: 0px 0px 25px gainsboro;
+	}
+	.live0 h1{
+		text-align: center;
+		font-size: 30px;
+	}
+	.live0 p{
+		text-align: center;
+    	font-size: 18px;
+	}
+	.live1{
+		width: 490px;
+    	margin-left: 50px;
+	}
+	.live{
+		margin-left: 40px;
+    	width: 480px;
+	}
+	.live2{
+		display: grid;
+    	grid-template-columns: auto auto;
+    	padding-left: 10px;
+    	font-size: 15px;
+	}
+	.live3{
+		display: grid;
+		grid-template-columns: auto auto;
+		padding-left: 50px;
+		font-size: 15px;
+	}
+	.line{
+		margin-top: 105px;
+		height: 250px;
+		border: 1px solid red;
+	}
+	/*<----------------->*/
+	.scr{
+		display: flex;
+		justify-content: center;
+		overflow-x: scroll;
+		width: 60%;
+		/*height: 60px;
+		margin-top: 20px;*/
+	}
+	.scr div{
+		box-shadow: 0px 0px 25px gainsboro;
+		padding: 5px;
+		padding-left: 25px;
+		
+		/*background-color: gainsboro;*/
+	}
+	.scr1{
+		display: flex;
+			padding: 5px;
+			overflow-x: scroll;
+			width: 60%;
+		border: 1px solid gainsboro;
+		/*margin-left: 50px;*/
+		/*width: 300px;*/
+		
+	}
+	/*<--------------------->*/
+	.any{
+		width: 650px;
+	    margin-left: 250px;
+	    padding-bottom: 50px;
+	    border-radius: 10px;
+	    border: 1px solid gainsboro;
+	    box-shadow: 0px 0px 25px gainsboro;
+	    background-color: #e6e6f1;
+	    background-image: url(https://www.pw.live/vidyapeeth-centres/_next/static/media/centre-assist.72492ae3.svg);
+	    background-repeat: no-repeat;
+	    background-position: right;
+	}
+	.any h1{
+		padding-left: 50px;
+    	padding-top: 30px;
+	}
+	.any p{
+		padding-left: 50px;
+    	margin-top: -15px;
+	}
+	.any a{
+		border: 1px solid gainsboro;
+	    padding: 12px;
+	    padding-left: 40px;
+	    padding-right: 40px;
+	    margin-left: 50px;
+	    border-radius: 10px;
+	    box-shadow: 0px 0px 25px gainsboro;
+	    background-color:white;
+	}
+	/*<---------------->*/
+	.footer{
+		    padding-left: 29px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding-right: 30px;
+    padding-top: 85px;
+	}
+	.footer1{
+		width: 33%;
+		margin-left: 110px;
+    margin-right: 56px;
+    padding-right: 25px;
+	}
+	.footer2{
+		width: 33%;
+	}
+	.footer2 a{
+		text-decoration: none;
+	    color: white;
+	    font-size: 20px;
+	}
+	.footer2 b{
+		padding-left: 10px;
+	}
+	.footer3{
+		width: 33%;
+	}
+	.footer3 i{
+		    font-size: 20px;
+    		margin: 5px;
+	}
+
+	.cop{
+		display: flex;
+	    justify-content: space-between;
+	    background-color: black;
+	    color: wheat;
+	    padding-bottom: 50px;
+	    padding-top: 38px;
+	    padding-left: 20px;
+	    padding-right: 45px;
+	}
+
+
+	</style>
+</head>
+<body>
+	<div class="nev">
+		<div class="nev1">
+			<a href=""><img src="https://www.pw.live//version14/assets/img/logo.png"></a>
+		 </div>
+		<div class="cou">
+			<a href="">All Courses 
+				<span><img src="https://www.pw.live//version14/assets/img/gridicons_dropdown.svg"></span>
+			</a>
+		</div>
+		<div class="pw">
+			<a href="">PW Centres</a>
+		</div>
+		<div class="pw1">
+			<a href=""><img width="100px" src="https://www.pw.live//version14/assets/img/pw-store.gif"> </a>
+		</div>
+		<div class="but">
+			<a href="">
+				<button type="button">Login/Register</button>
+			</a>
+		</div>
+
+	</div>
+	<!-- <==================> -->
+		<div class="pwc">
+			<img width="100%" height="400px" src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/fa00533a-9059-49f1-9276-a23cce92fd21.jpg">
+		</div>
+		<!-- <=================> -->
+			<div class="find">
+				<h1>Find PW Centre in your city</h1>
+				<div class="faq1">
+					<div>______________</div>
+					<div >Available in <b>73</b> cities</div>
+					<div>_______________</div>
+				</div>
+				<input placeholder="Search for your city (e.g. Delhi)">
+			</div>
+
+			<div class="img">
+				<div>
+					<a href=""><img src="https://www.pw.live/vidyapeeth-centres/_next/image?url=https%3A%2F%2Fd2bps9p1kiy4ka.cloudfront.net%2F5eb393ee95fab7468a79d189%2Fa501f613-4016-4166-8c25-3f37a0e7b001.png&w=64&q=75"><p>Kota</p></a>
+				</div>
+				<div>
+					<a href=""><img src="https://www.pw.live/vidyapeeth-centres/_next/image?url=https%3A%2F%2Fd2bps9p1kiy4ka.cloudfront.net%2F5eb393ee95fab7468a79d189%2F3a30fabc-ce51-4b46-b967-e04e328e6c7c.png&w=64&q=75"><p>Patna</p></a>
+				</div>
+				<div>
+					<a href=""><img src="https://www.pw.live/vidyapeeth-centres/_next/image?url=https%3A%2F%2Fd2bps9p1kiy4ka.cloudfront.net%2F5eb393ee95fab7468a79d189%2F5d79f883-a93c-4c3f-ae9a-4c1432c94d2d.png&w=64&q=75"><p>Noida</p> </a>
+				</div>
+				<div>
+					<a href=""><img src="https://www.pw.live/vidyapeeth-centres/_next/image?url=https%3A%2F%2Fd2bps9p1kiy4ka.cloudfront.net%2F5eb393ee95fab7468a79d189%2Fc740bd92-8687-4bf2-9f12-4eadc0174e8f.png&w=64&q=75"><p>New Delhi</p> </a>
+				</div>
+				<div>
+					<a href=""><img src="https://www.pw.live/vidyapeeth-centres/_next/image?url=https%3A%2F%2Fd2bps9p1kiy4ka.cloudfront.net%2F5eb393ee95fab7468a79d189%2F776cd42c-cb46-433b-8baa-9661c7e51c53.png&w=64&q=75"><p>Kolkata</p> </a>
+				</div>
+				<div>
+					<a href=""><img src="https://www.pw.live/vidyapeeth-centres/_next/image?url=https%3A%2F%2Fd2bps9p1kiy4ka.cloudfront.net%2F5eb393ee95fab7468a79d189%2F9c80714b-b2c7-4bb8-9055-026c44a33862.png&w=64&q=75"><p>Ahmedabad</p> </a>
+				</div>
+				<div>
+					<a href=""><img src="https://www.pw.live/vidyapeeth-centres/_next/image?url=https%3A%2F%2Fd2bps9p1kiy4ka.cloudfront.net%2F5eb393ee95fab7468a79d189%2F957728e3-1d8e-4d83-ac40-3714cb322530.png&w=64&q=75"><p>Lucknow</p> </a>
+				</div>
+				<div style="padding-top: 23px; font-size: 20px; text-align: center; background-color: gainsboro;">
+					<div class="city">
+						<p style="margin-left: 45px;"><a href="index.html">X</a></p> 
+						<p style="margin-left: 165px;  margin-top: -35px;">Log in or sign up</p>
+						<hr>
+						<div>
+							<h1 style="padding-left: 35px; ">Welcome to Airbnb</h1>
+							
+						</div>
+					</div>
+					<input type="checkbox" id="input" hidden>
+						<div class="city">
+				
+						</div>
+					<label class="view" for="input"><a href="#"><b>View All</b></a></label>
+				</div>
+			</div>
+			<!-- <=========================> -->
+			<div class="our">
+				<h1>Our Offerings</h1>
+			</div>
+			<!-- <================> -->
+
+			<div class="ex">
+				<div>
+					<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/iit-jee-icon.2e7d1624.svg"><br>
+					<b>IIT JEE</b>
+					<p>Programs that cater to your needs<br> to crack IIT JEE</p>
+					<a href="">Explore</a>
+				</div>
+				<div>
+					<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/neet-icon.39ec2f82.svg"><br>
+					<b>NEET</b>
+					<p>Programs that cater to your needs<br> to crack NEET UG exam</p>
+					<a href="">Explore</a>
+				</div>
+				<div>
+					<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/foundation-icon.0310455b.svg"><br>
+					<b>Foundation</b>
+					<p>Programs that cater to your needs for<br> school preparation</p>
+					<a href="">Explore</a>
+				</div>
+			</div>
+			<!-- <===================================> -->
+
+			<div class="ex1">
+				<a href="">Explore Batches</a>
+			</div>
+			<!-- <===================> -->
+			<div class="sch">
+				<div style="margin-left: -350px; margin-top: 20px;">
+					<h1 style="font-size: 20px; margin-left: 123px;">Win up to 100% Scholarship</h1>
+					<p style="margin-left: 125px; font-size: 20px;">Get Registered for Physics Wallah National Scholarship cum Admission Test (PWNSAT)!
+					</p>
+					<div class="sch1">
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/test.3c740b9f.svg">
+							<p style="font-size: 18px; color: peru; margin-top: 0px;">1000+</p>
+							<p style="font-size: 15px; color: peru; margin-top: -10px;">Tests Conducted</p>
+						</div>
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/Scholarship.1977efa4.svg">
+							<p style="font-size: 18px; color: peru; margin-top: 0px;">60k+</p>
+							<p style="font-size: 15px; color: peru; margin-top: -10px;">Students received <br>scholarships</p>
+						</div>
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/Money.1ec1181f.svg">
+							<p style="font-size: 18px; color: peru; margin-top: 0px;">INR 200 Cr+</p>
+							<p style="font-size: 15px; color: peru; margin-top: -10px;">Worth Scholarships<br> Given</p>
+						</div>
+					</div>
+					<div class="sch2">
+						<a href="">Know More</a>
+					</div>
+				</div>
+			</div>
+			<!-- <================> -->
+			<div style="display: flex; justify-content: center; ">
+				<div class="con0">
+					<h1>Get Free Counselling Session</h1>
+					<p>PW Vidyapeeth brings Free Guidance sessions with Star Faculties of PW. Join and get your all queries resolved</p>
+					<div class="con">
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/Live.906b3a6a.svg">
+							<span>Live session with PW Star Faculties</span>
+						</div>
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/Answer.d42d9b18.svg">
+							<span>Get tips & tricks to crack IIT/NEET</span>
+						</div>
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/Support.d6ca7f2b.svg">
+							<span>Get all your queries resolved</span>
+						</div>
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/Vidyapeeth-Icon.24065f75.svg">
+							<span>Learn PW Vidyapeeth offerings</span>
+						</div>
+					</div>
+					<div class="vi">
+						<a href="">View Webinars</a>
+					</div>
+				</div>
+			</div>
+			<!-- <=====================> -->
+			<div>
+				<h1>PW Centres</h1>
+				<h3>Live Classroom Experience</h3>
+				<p>Take a tour of our online centres spread all across the country</p>
+			</div>
+			<!-- <==============> -->
+			<!-- <div style="background-image: url("https://img.youtube.com/vi/9G9oDiDNWl8/maxresdefault.jpg");">
+				<video width="320" height="240" controls>
+					<source src="movie.mp4" type="video/mp4">
+				 
+				  </video>
+			</div> -->
+
+			
+			<!-- <====================> -->
+
+			<div class="live0">
+				<div class="live">
+					<img width="400px" src="https://www.pw.live/vidyapeeth-centres/_next/static/media/vidyapeeth.da082efb.jpg">
+					<h1>PW<b>Vidyapeeth</b></h1>
+					<p>Vidyapeeth is a <b> complete offline learning<br> centre</b> with smartboards in every class.</p>
+					<div class="live2" >
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/flower-price-icon.7ecca9bb.svg">
+							<span>Very affordable<br> offline education</span>
+						</div>
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/video-icon.f1e40308.svg">
+							<span>
+								Recorded lectures if <br>class is missed</span>
+						</div>
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/teaching-icon.78d9298a.svg">
+							<samp>Best faculty pool in<br> the country</samp>
+						</div>
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/24x7-icon.78c8adb3.svg">
+							<span>Doubt resolution<br> available 24/7</span>
+						</div>
+					</div>
+				</div>
+				<div class="line">
+				</div>
+				<div class="live1">
+					<img width="400px" src="https://www.pw.live/vidyapeeth-centres/_next/static/media/pathshala.5d0e8a92.jpg">
+					<h1>PW <b>Vidyapeeth</b>
+					</h1>
+					<p style="margin-top: -12px;">(Pathshala Centres)</p>
+						
+					
+					<p>Pathshala combines the best parts of <b>face-<br>to-face and online learning together.</b></p>
+					<div class="live3">
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/users-video-icon.8e765834.svg">
+							<span>Live scheduled <br>lectures</span>
+						</div>
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/user-laptop-icon.7222bb89.svg">
+							<span>Classes with<br> online setting</span>
+						</div>
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/users-communication-icon.d73d72d6.svg">
+							<span>Interactive<br> classrooms</span>
+						</div>
+						<div>
+							<img src="https://www.pw.live/vidyapeeth-centres/_next/static/media/study-icon.e5bd4ec1.svg">
+							<span>Personalized <br>attention.</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- <=======================> -->
+			<div>
+				<h1 style="text-align: center;">Hear it from the Students!</h1>
+			</div>
+			<!-- <==========================> -->
+			<div class="scr">
+				<div class="scr1">
+					<div >
+						<img width="100px" src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/581942a2-2725-412c-8e88-a26cf7bcb184.jpg">
+						<h3>Samuel Harshith Tsapa</h3>
+						<p>AIR24</p>
+						<p>PW has been my guiding light throughout my NEET preparation journey. The comprehensive content and exceptional teaching methods helped me secure a top rank. Thank you, PW, for making my dream come true!</p>
+						
+					</div>
+					<div>
+						<img width="100px" src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/043c32bb-1088-4bbd-9f53-641e1c451534.jpg">
+						<h3>Nishant Sharma</h3>
+						<p>AIR28</p>
+						<p>Studying at PW was a game-changer for me. The well-structured courses, doubt-solving sessions, and constant support from the faculty were instrumental in my NEET success. I couldn't have done it without them</p>
+
+					</div>
+					<div>
+						<img width="100px" src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/f5182fd6-4f89-4a99-ad4a-85bb204bfbc7.jpg">
+						<h3>Prayas Rout</h3>
+						<p>AIR67</p>
+						<p>I can't express how grateful I am to PW for my NEET success. Their expert guidance, doubt-clearing sessions, and test series played a pivotal role in my high rank. Thank you, PW, for making my dream come true!</p>
+
+					</div>
+					<div>
+						<img width="100px" src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/ae6043a3-b13b-4c5f-a793-3e2103112f35.png">
+						<h3>Shivang Nagta</h3>
+						<p>AIR1763</p>
+						<p>Studying at PW was a game-changer for me. The well-structured courses, doubt-solving sessions, and constant support from the faculty were instrumental in my NEET success. I couldn't have done it without them</p>
+					</div>
+				</div>
+			</div>
+			<!-- <==================> -->
+
+			<div style="background-image: url(https://www.pw.live/vidyapeeth-centres/_next/image?url=%2Fvidyapeeth-centres%2F_next%2Fstatic%2Fmedia%2Fabout-bg-new.3955d25b.png&w=1920&q=75);">
+				<h1 style="text-align: center;">About PW Centres</h1>
+				<p style="text-align: center;">Education for everyone</p>
+				<b style="padding-left: 120px;font-size: 20px;">Physics Wallah Vidyapeeth Centers in India</b>
+				<p style="padding-left: 120px;padding-right: 120px;font-size: 20px;">Physics Wallah, one of India's most affordable Ed tech platforms, offers offline Vidyapeeth, a complete offline education platform, and <br>Pathshala classes, a hybrid education platform for student’s understanding. The platform offers an exceptional learning experience to<br> students, guided by a team of highly qualified instructors. These classes are designed to prepare students for rigorous competitive<br> exams such as IIT JEE and NEET.<br>
+						<br>
+ 						<br>
+
+					PW provides education centres across <b>150+ centres,</b> which means<b> 70+ cities</b> in India, including metropolitan cities such as New Delhi,<br> Noida, Faridabad, Pune, Mumbai, and many more. Vidyapeeth and Pathshala create a unique learning environment where students<br> thrive with like-minded peers, all driven by a shared passion for advancing together.<br>
+					<br>
+					 <br>
+					<br>
+					More than 2000 students have become a part of PW Family’s Vidyapeeth and Pathshala centres and going forward. Here’s the list of <br>prominent features of Vidyapeeth and Paathshala mentioned below:<br>
+					<br>
+					2 teacher classrooms for the students<br>
+					Personalized attention to all the students<br>
+					Doubt Solving sessions<br>
+					Interactive Learning Session<br>
+					Personalized Mentor for growth<br>
+					Exceptional Academic Performance<br>
+					 <br>
+					<br>
+					Physics Wallah at Vidyapeeth and Pathshala offers a range of advantages to enhance your preparation journey:<br>
+					<br>
+					 <br>
+					<br>
+					<b>Solid Foundation:</b> Our courses are structured to lay strong foundations, starting from the basics. Students gain an in-depth<br> understanding of concepts and can instantly clarify doubts thanks to our approachable faculty.<br>
+					<br>
+					 <br>
+					<br>
+					<b>Hybrid Learning Session:</b> Our Paathshala centres provide unique learning options. You can choose between attending classes in<br> person or online, whichever suits your schedule best. This flexibility is designed to make learning easier and more enjoyable, allowing<br> you to study when and how you feel most energized and motivated.<br>
+					<br>
+					 <br>
+					<br>
+					<b>Competitive Spirit:</b> Our comprehensive test series fosters a healthy competitive spirit among students, motivating them to improve<br> continually.<br>
+					<br>
+					<br>
+					<b>Exceptional Faculty:</b> Students can learn from top-notch instructors who excel at simplifying complex concepts. Our study materials<br> align with the latest exam patterns and include detailed subject-wise analyses through regular testing.</p>
+
+			</div>
+
+			<!-- <=====================> -->
+			<div class="any">
+				<h1>Any doubts?</h1>
+				<p>Our support team will be happy to assist you!</p>
+				<a href="">
+					<i class="fa fa-phone"><b>9513350005</b></i>
+					
+				</a>
+				<!-- <div style="background-image: url(https://www.pw.live/vidyapeeth-centres/_next/static/media/centre-assist.72492ae3.svg);"></div> -->
+			</div>
+			<!-- <====================> -->
+
+			<div class="footer">
+				<div class="footer1">
+					<img width="60px" src="data:image/jpeg;base64,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">
+					<div style="margin-left: 79px; margin-top: -38px; font-size: 25px;">Centres</div>
+					<p>We understand that every student has<br> different needs and capabilities, which is<br> why we create such a wonderful and<br> unique curriculum that is the best fit for <br> every student.</p>
+					<div>
+						
+					</div>
+					
+
+				</div>
+				<div class="footer2">
+					<b>Get in touch</b>
+					<p>Have queries? Feel free to get in<br> touch with us right away!</p>
+					<div>
+						<a href="">
+							<i class="fa fa-phone">
+							<b>07019243492</b></i>
+						</a><br>
+
+						<a href="">
+							<i class="fa fa-envelope">
+							<b>support@pw.live</b></i>
+						</a>
+					</div>
+				</div>
+				<div class="footer3">
+					<h1>Follow us</h1>
+					<i class="fa fa-youtube"></i><br>
+					<i class="fa fa-instagram"></i><br>
+					<i class="fa fa-telegram"></i><br>
+					<i class="fa fa-facebook"></i>
+				</div>
+
+			</div>
+			<div class="cop">
+				<p>Privacy Policy | Terms & Conditions</p>
+				<p>Copyright © 2023 Physics Wallah Pvt. Ltd. All rights reserved.</p>
+			</div>
+</html>
